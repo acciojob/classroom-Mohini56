@@ -6,32 +6,37 @@ public class Student {
     private int age;
     private double averageScore;
 
-    public Student(String name,int age,double averageScore){
-        this.name=name;
-        this.age=age;
-        this.averageScore=averageScore;
+    public Student(){
+
     }
 
-    public void setName(String name){
-        this.name=name;
-    }
-    public void setAge(int age){
-        this.age=age;
-    }
-    public void setAverage(double averageScore){
-        this.averageScore=averageScore;
+    public Student(String name, int age, double averageScore) {
+        this.name = name;
+        this.age = age;
+        this.averageScore = averageScore;
     }
 
-    public String getName(){
-        return this.name;
+    public String getName() {
+        return name;
     }
 
-    public int getAge(){
-        return this.age;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public double getAverage(){
-        return this.averageScore;
+    public int getAge() {
+        return age;
     }
-        
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public double getAverageScore() {
+        return averageScore;
+    }
+
+    public void setAverageScore(double averageScore) {
+        this.averageScore = averageScore;
+    }
 }
